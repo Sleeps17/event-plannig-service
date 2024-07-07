@@ -1,9 +1,9 @@
 version: '3.9'
 
 services:
-  events-planning-postgres:
+  events-planning-events-postgres:
     image: postgres:latest
-    container_name: events-planning-postgres
+    container_name: events-planning-events-postgres
     restart: always
     environment:
       - POSTGRES_USER=sleeps17
@@ -12,18 +12,18 @@ services:
     ports:
       - "5430:5432"
     volumes:
-      - "postgres_data:/var/lib/postgresql/data"
+      - "events_data:/var/lib/postgresql/data"
 
-  events-planning-service:
+  events-planning-events-service:
     build: .
-    container_name: events-planning-service
+    container_name: events-planning-events-service
     restart: always
     environment:
-      DATABASE_URL: postgres://sleeps17:Pavel19122004@events-planning-postgres:5432/events-service
+      DATABASE_URL: postgres://sleeps17:Pavel19122004@events-planning-events-postgres:5432/events-service
     ports:
       - "4400:4400"
     depends_on:
-      - events-planning-postgres
+      - events-planning-events-postgres
 
 volumes:
-  postgres_data: {}
+  events_data: {}

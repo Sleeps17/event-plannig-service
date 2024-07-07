@@ -4,7 +4,7 @@ server:
   port: "4400"
   timeout: 10s
 storage:
-  host: "events-planning-postgres"
+  host: "events-planning-events-postgres"
   port: "5432"
   username: "sleeps17"
   password: "Pavel19122004"
