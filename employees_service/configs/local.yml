@@ -1,0 +1,12 @@
+env: "local"
+server:
+  host: "0.0.0.0"
+  port: "4402"
+  timeout: 10s
+storage:
+  host: "events-planning-employees-postgres"
+  port: "5432"
+  username: "sleeps17"
+  password: "Pavel19122004"
+  database: "employees-service"
+  timeout: 20s
