@@ -1,0 +1,12 @@
+env: "local" # local, dev, prod
+token_ttl: 1h
+server:
+  port: 4401
+  timeout: 5s
+storage:
+  host: "events-planning-auth-postgres"
+  port: 5432
+  user: "sleeps17"
+  password: "Pavel19122004"
+  database: "auth-service"
+  timeout: 10s

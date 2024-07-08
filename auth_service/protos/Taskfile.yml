@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  clear:
+    cmds:
+      - rm -rf ./gen/go/*
+  gen-auth:
+    cmds:
+      - find ./proto/auth -name "*.proto" | xargs protoc -I proto -I ./proto/auth --go_out=./gen/go --go_opt=paths=source_relative --go-grpc_out=./gen/go --go-grpc_opt=paths=source_relative

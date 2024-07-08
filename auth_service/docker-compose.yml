@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: events-planning-auth-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=sleeps17
+      - POSTGRES_PASSWORD=Pavel19122004
+      - POSTGRES_DB=auth-service
+    ports:
+      - '5431:5432'
+    volumes:
+      - auth_data:/var/lib/postgresql/data
+
+  auth:
+    build: .
+    container_name: events-planning-auth-service
+    restart: always
+    environment:
+      DATABASE_URL: postgres://sleeps17:Pavel19122004@events-planning-auth-postgres:5432/auth-service
+    ports:
+      - '4401:4401'
+    depends_on:
+      - postgres
+
+volumes:
+  auth_data: {}

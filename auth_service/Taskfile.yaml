@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  migrate:
+    cmds:
+      - goose -dir ./migrations postgres "$DATABASE_URL" up
+
+  run:
+    cmds:
+      - /usr/local/bin/auth-service
+
+  migrate-and-run:
+    cmds:
+      - task migrate
+      - task run
