@@ -5,7 +5,7 @@ CREATE SCHEMA IF NOT EXISTS apps_schema;
 
 CREATE TABLE IF NOT EXISTS users_schema.users (
     id INTEGER PRIMARY KEY,
-    email TEXT NOT NULL UNIQUE,
+    login TEXT NOT NULL UNIQUE,
     pass_hash BYTEA NOT NULL
 );
 

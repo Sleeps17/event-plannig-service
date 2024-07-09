@@ -2,7 +2,7 @@ package grpcserver
 
 import (
 	"fmt"
-	authgrpc "github.com/Sleeps17/events-planning-service-backend/auth-service/internal/grpc/auth"
+	authgrpc "github.com/Sleeps17/events-planning-service-backend/auth_service/internal/grpc/auth"
 	"google.golang.org/grpc"
 	"log/slog"
 	"net"

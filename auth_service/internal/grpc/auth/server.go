@@ -3,8 +3,8 @@ package auth
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/events-planning-service-backend/auth-service/internal/services/auth"
-	authv1 "github.com/Sleeps17/events-planning-service-backend/auth-service/protos/gen/go/auth"
+	"github.com/Sleeps17/events-planning-service-backend/auth_service/internal/services/auth"
+	authv1 "github.com/Sleeps17/events-planning-service-backend/auth_service/protos/gen/go/auth"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

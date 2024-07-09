@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Sleeps17/events-planning-service-backend/auth-service/internal/app"
-	"github.com/Sleeps17/events-planning-service-backend/auth-service/internal/config"
+	"github.com/Sleeps17/events-planning-service-backend/auth_service/internal/app"
+	"github.com/Sleeps17/events-planning-service-backend/auth_service/internal/config"
 	"log/slog"
 	"os"
 	"os/signal"

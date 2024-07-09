@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/events-planning-service-backend/auth-service/internal/domain/models"
+	"github.com/Sleeps17/events-planning-service-backend/auth_service/internal/domain/models"
 )
 
 var (
