@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/Sleeps17/events-planning-service-backend/rooms_service/internal/app"
 	"github.com/Sleeps17/events-planning-service-backend/rooms_service/internal/config"
 	"log/slog"
@@ -11,6 +12,8 @@ import (
 
 func main() {
 	cfg := config.MustLoad()
+
+	fmt.Println(cfg)
 
 	logger := setupLogger(cfg.Env)
 
