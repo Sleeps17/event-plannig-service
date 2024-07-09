@@ -2,7 +2,7 @@ package mock_rooms_service
 
 import (
 	"context"
-	"github.com/Sleeps17/event-plannig-service-backend/events-service/internal/domain/models"
+	"github.com/Sleeps17/events-planning-service-backend/events_service/internal/domain/models"
 )
 
 type Service struct{}

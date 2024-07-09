@@ -3,9 +3,9 @@ package repository_events_service
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/event-plannig-service-backend/events-service/internal/domain/models"
-	eventsrepository "github.com/Sleeps17/event-plannig-service-backend/events-service/internal/repository/events"
-	eventservice "github.com/Sleeps17/event-plannig-service-backend/events-service/internal/services/events"
+	"github.com/Sleeps17/events-planning-service-backend/events_service/internal/domain/models"
+	eventsrepository "github.com/Sleeps17/events-planning-service-backend/events_service/internal/repository/events"
+	eventservice "github.com/Sleeps17/events-planning-service-backend/events_service/internal/services/events"
 	"time"
 )
 

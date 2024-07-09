@@ -3,7 +3,7 @@ package database
 import (
 	"context"
 	"fmt"
-	"github.com/Sleeps17/event-plannig-service-backend/events-service/internal/config"
+	"github.com/Sleeps17/events-planning-service-backend/events_service/internal/config"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

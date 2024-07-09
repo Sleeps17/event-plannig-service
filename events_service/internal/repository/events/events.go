@@ -3,7 +3,7 @@ package events_repository
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/event-plannig-service-backend/events-service/internal/domain/models"
+	"github.com/Sleeps17/events-planning-service-backend/events_service/internal/domain/models"
 	"time"
 )
 
