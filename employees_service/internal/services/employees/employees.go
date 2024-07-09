@@ -3,7 +3,7 @@ package employees_service
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/domain/models"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/domain/models"
 )
 
 var (

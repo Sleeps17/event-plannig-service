@@ -3,9 +3,9 @@ package grpcserver
 import (
 	"errors"
 	"fmt"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/config"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/grpc/api"
-	employeeservice "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/services/employees"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/config"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/grpc/api"
+	employeeservice "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/services/employees"
 	"google.golang.org/grpc"
 	"log/slog"
 	"net"

@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/domain/models"
-	employeesv1 "github.com/Sleeps17/events-planning-backend-service/employees_service/protos/gen/go/employees"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/domain/models"
+	employeesv1 "github.com/Sleeps17/events-planning-service-backend/employees_service/protos/gen/go/employees"
 )
 
 func fromRequest(employee *employeesv1.Employee) *models.Employee {

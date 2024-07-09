@@ -1,6 +1,6 @@
 package employees_repository_repository
 
-import "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/repository"
+import "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/repository"
 
 type service struct {
 	repo repository.EmployeeRepository

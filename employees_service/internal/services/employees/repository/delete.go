@@ -3,8 +3,8 @@ package employees_repository_repository
 import (
 	"context"
 	"errors"
-	repo "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/repository"
-	employeeservice "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/services/employees"
+	repo "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/repository"
+	employeeservice "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/services/employees"
 )
 
 func (s *service) Delete(ctx context.Context, employeeID uint64) error {

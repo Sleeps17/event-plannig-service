@@ -3,8 +3,8 @@ package api
 import (
 	"context"
 	"errors"
-	employeeservice "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/services/employees"
-	employeesv1 "github.com/Sleeps17/events-planning-backend-service/employees_service/protos/gen/go/employees"
+	employeeservice "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/services/employees"
+	employeesv1 "github.com/Sleeps17/events-planning-service-backend/employees_service/protos/gen/go/employees"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 

@@ -3,11 +3,11 @@ package app
 import (
 	"context"
 	"errors"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/config"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/database"
-	grpcserver "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/grpc"
-	employeesrepository "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/repository/employee"
-	employeeservice "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/services/employees/repository"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/config"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/database"
+	grpcserver "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/grpc"
+	employeesrepository "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/repository/employee"
+	employeeservice "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/services/employees/repository"
 	"google.golang.org/grpc"
 	"log/slog"
 )

@@ -4,9 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/Sleeps17/events-planning-backend-service/employees_service/internal/domain/models"
-	repo "github.com/Sleeps17/events-planning-backend-service/employees_service/internal/repository"
-	"github.com/jackc/pgx/v5"
+	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/domain/models"
+	repo "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/repository"
 )
 
 func (r *repository) SelectByID(ctx context.Context, employeeID uint64) (*models.Employee, error) {
