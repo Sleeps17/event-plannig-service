@@ -27,6 +27,6 @@ COPY --from=builder /go/bin/events-service /usr/local/bin/events-service
 COPY /configs/local.yaml /configs/local.yaml
 ENV CONFIG_PATH=/configs/local.yaml
 
-EXPOSE 4400
+EXPOSE 4403
 
 ENTRYPOINT ["task", "migrate-and-run"]
