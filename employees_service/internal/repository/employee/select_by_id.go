@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/domain/models"
 	repo "github.com/Sleeps17/events-planning-service-backend/employees_service/internal/repository"
+	"github.com/jackc/pgx/v5"
 )
 
 func (r *repository) SelectByID(ctx context.Context, employeeID uint64) (*models.Employee, error) {

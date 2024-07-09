@@ -2,6 +2,7 @@ package jwt
 
 import (
 	"github.com/Sleeps17/events-planning-service-backend/auth_service/internal/domain/models"
+	"github.com/golang-jwt/jwt/v5"
 	"time"
 )
 

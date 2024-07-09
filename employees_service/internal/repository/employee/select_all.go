@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/Sleeps17/events-planning-service-backend/employees_service/internal/domain/models"
+	"github.com/jackc/pgx/v5"
 )
 
 func (r *repository) SelectAll(ctx context.Context) ([]*models.Employee, error) {

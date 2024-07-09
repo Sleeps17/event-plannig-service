@@ -50,7 +50,7 @@ func (a *Auth) Login(ctx context.Context, login string, password string, appId u
 			return "", fmt.Errorf("can't login user: %w", ErrInvalidCredentials)
 		}
 
-		a.log.Error("can't get user: %w", err.Error())
+		a.log.Error("can't get user", slog.Any("error", err))
 
 		return "", fmt.Errorf("can't get user: %w", err)
 	}
