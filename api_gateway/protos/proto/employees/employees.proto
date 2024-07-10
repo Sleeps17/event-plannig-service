@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package employees;
+
+option go_package = "github.com.sleeps17.events-planning-service-backend.employees-service;employeesv1";
+
+import "google/protobuf/empty.proto";
+
+service Employees {
+  rpc Create(CreateRequest) returns (CreateResponse);
+  rpc GetByID(GetByIDRequest) returns (GetByIDResponse);
+  rpc GetAll(google.protobuf.Empty) returns (GetAllResponse);
+  rpc Update(UpdateRequest) returns (UpdateResponse);
+  rpc Delete(DeleteRequest) returns (google.protobuf.Empty);
+}
+
+message Employee {
+  uint64 id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string patronymic = 4;
+  string email = 5;
+  string mobile_number = 6;
+}
+
+message CreateRequest {
+  Employee employee = 1;
+}
+
+message CreateResponse {
+  uint64 id = 1;
+}
+
+message GetByIDRequest {
+  uint64 id = 1;
+}
+
+message GetByIDResponse {
+  Employee employee = 1;
+}
+
+message GetAllResponse {
+  repeated Employee employees = 1;
+}
+
+message UpdateRequest {
+  uint64 id = 1;
+  Employee updated_employee = 2;
+}
+
+message UpdateResponse {
+  Employee updated_employee = 1;
+}
+
+message DeleteRequest {
+  uint64 id = 1;
+}

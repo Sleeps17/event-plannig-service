@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package room_service;
+
+option go_package = "github.com/sleeps17/events-planning-service-backend/room_service;roomsv1";
+
+import "google/protobuf/empty.proto";
+
+service Rooms {
+  rpc Create(CreateRequest) returns (CreateResponse);
+  rpc GetByID(GetRequest) returns (GetResponse);
+  rpc GetAll(google.protobuf.Empty) returns (GetAllResponse);
+  rpc Update(UpdateRequest) returns (UpdateResponse);
+  rpc Delete(DeleteRequest) returns (google.protobuf.Empty);
+}
+
+message Room {
+  uint32 id = 1;
+  string name = 2;
+  uint32 capacity = 3;
+}
+
+message CreateRequest {
+  Room room = 1;
+}
+
+message CreateResponse {
+  uint32 id = 1;
+}
+
+message GetRequest {
+  uint32 id = 1;
+}
+
+message GetResponse {
+  Room room = 1;
+}
+
+message GetAllResponse {
+  repeated Room rooms = 1;
+}
+
+message UpdateRequest {
+  uint32 id = 1;
+  Room updated_room = 2;
+}
+
+message UpdateResponse {
+  Room updated_room = 1;
+}
+
+message DeleteRequest {
+  uint32 id = 1;
+}

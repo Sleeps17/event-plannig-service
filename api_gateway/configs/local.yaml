@@ -1,0 +1,19 @@
+env: "local"
+secret: "hello-world"
+server:
+  host: "0.0.0.0"
+  port: "8080"
+  timeout: 10s
+  idle_timeout: 100s
+auth:
+  host: "0.0.0.0"
+  port: "4400"
+employees:
+  host: "0.0.0.0"
+  port: "4401"
+events:
+  host: "0.0.0.0"
+  port: "4402"
+rooms:
+  host: "0.0.0.0"
+  port: "4403"
